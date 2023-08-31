@@ -404,9 +404,9 @@ void starMatching(double centroids_st[MAX_STARS][3], int tot_stars, double data[
     // Number of identified stars
     int N_is = 0;
 
-    double tol = 0.5;
-    double p_1 = 35;
-    double p_2 = 80;
+    double tol = TOL;
+    double p_1 = P1;
+    double p_2 = P2;
 
     // Constants for using the k vector table (to be used in the 4 star matching)
     double m = (Y_MAX - Y_MIN + 2 * EPSILON) / (N_KVEC_PAIRS - 1);
